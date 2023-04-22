@@ -24,11 +24,4 @@ jobs:
       run: npm test
 
     - name: Build and publish Docker image
-      uses: docker/build-push-action@v2
-      with:
-        context: .
-        push: true
-        tags: cricamore/tallergithubactions:latest
-      env:
-        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      run: docker build -t imagetest .
