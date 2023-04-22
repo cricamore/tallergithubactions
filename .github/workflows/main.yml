@@ -28,7 +28,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: cricamore/nombre-imagen:latest
+        tags: cricamore/tallergithubactions:latest
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
